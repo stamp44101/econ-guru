@@ -7,7 +7,7 @@ function SectionLabel({ children, color }) {
   return (
     <div
       className="text-[11px] tracking-[0.3em] uppercase mb-4 mt-10"
-      style={{ color: color || "rgba(212,168,90,0.55)" }}
+      style={{ color: color || "rgba(212,168,90,0.82)" }}
     >
       ▸ {children}
     </div>
@@ -30,7 +30,7 @@ function Welcome({ setChapterId }) {
       </h1>
       <p
         className="text-lg thai max-w-2xl"
-        style={{ color: "rgba(252,232,176,0.7)" }}
+        style={{ color: "rgba(252,232,176,0.9)" }}
       >
         เลือกบทจากด้านซ้ายเพื่อเริ่มทบทวน หรือลองเปิดโหมด <span style={{ color: "#d4a85a" }}>Calc</span> เพื่อใช้เครื่องคิด หรือ <span style={{ color: "#d4a85a" }}>Quiz</span> เพื่อทดสอบความเข้าใจ
       </p>
@@ -63,7 +63,7 @@ function Welcome({ setChapterId }) {
                   >
                     {c.title}
                   </div>
-                  <div className="text-sm mt-1 thai" style={{ color: "rgba(252,232,176,0.55)" }}>
+                  <div className="text-sm mt-1 thai" style={{ color: "rgba(252,232,176,0.82)" }}>
                     {c.titleTh}
                   </div>
                 </div>
@@ -78,7 +78,7 @@ function Welcome({ setChapterId }) {
         className="mt-10 p-5 border-l-2 thai"
         style={{ borderColor: "#d4a85a", background: "rgba(212,168,90,0.05)", color: "rgba(252,232,176,0.8)" }}
       >
-        <div className="text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: "rgba(212,168,90,0.7)" }}>
+        <div className="text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: "rgba(212,168,90,0.9)" }}>
           ▸ เคล็ดลับการใช้
         </div>
         <ul className="text-[15px] space-y-1.5 leading-relaxed">

@@ -51,7 +51,7 @@ export default function InflCalc() {
             style={{
               background: tab === id ? "rgba(212,168,90,0.1)" : "transparent",
               border: `1px solid ${tab === id ? "#d4a85a" : "rgba(212,168,90,0.2)"}`,
-              color: tab === id ? "#fce8b0" : "rgba(252,232,176,0.6)",
+              color: tab === id ? "#fce8b0" : "rgba(252,232,176,0.85)",
             }}
           >
             {label}
@@ -74,7 +74,7 @@ export default function InflCalc() {
                   style={{
                     background: direction === id ? "rgba(125,140,196,0.15)" : "transparent",
                     border: `1px solid ${direction === id ? "#7d8cc4" : "rgba(212,168,90,0.2)"}`,
-                    color: direction === id ? "#fce8b0" : "rgba(252,232,176,0.6)",
+                    color: direction === id ? "#fce8b0" : "rgba(252,232,176,0.85)",
                   }}
                 >
                   {label}
@@ -95,7 +95,7 @@ export default function InflCalc() {
           <Section title="Result">
             <Out label="CD" value={Number.isFinite(cd) ? fmt(cd, 2) : "—"} accent={direction === "ad2cd" ? "#7d8cc4" : undefined} />
             <Out label="AD" value={Number.isFinite(ad) ? fmt(ad, 2) : "—"} accent={direction === "cd2ad" ? "#7d8cc4" : undefined} />
-            <p className="thai text-xs mt-4" style={{ color: "rgba(252,232,176,0.45)" }}>
+            <p className="thai text-xs mt-4" style={{ color: "rgba(252,232,176,0.72)" }}>
               กฎทอง: Actual$ → discount ด้วย i_f. Constant$ → discount ด้วย i.
             </p>
           </Section>
@@ -115,7 +115,7 @@ export default function InflCalc() {
                   style={{
                     background: rateDir === id ? "rgba(125,140,196,0.15)" : "transparent",
                     border: `1px solid ${rateDir === id ? "#7d8cc4" : "rgba(212,168,90,0.2)"}`,
-                    color: rateDir === id ? "#fce8b0" : "rgba(252,232,176,0.6)",
+                    color: rateDir === id ? "#fce8b0" : "rgba(252,232,176,0.85)",
                   }}
                 >
                   {label}
@@ -135,7 +135,7 @@ export default function InflCalc() {
           <Section title="Result">
             <Out label="i (real)" value={Number.isFinite(realR) ? fmt(realR * 100, 4) + " %" : "—"} accent={rateDir === "mkt2real" ? "#7d8cc4" : undefined} />
             <Out label="i_f (market)" value={Number.isFinite(mktR) ? fmt(mktR * 100, 4) + " %" : "—"} accent={rateDir === "real2mkt" ? "#7d8cc4" : undefined} />
-            <p className="font-mono text-xs mt-4" style={{ color: "rgba(252,232,176,0.55)" }}>
+            <p className="font-mono text-xs mt-4" style={{ color: "rgba(252,232,176,0.82)" }}>
               i_f = i + f + (i·f)
             </p>
           </Section>

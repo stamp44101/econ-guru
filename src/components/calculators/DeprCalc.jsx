@@ -69,7 +69,7 @@ export default function DeprCalc() {
                 style={{
                   background: m === x.id ? "rgba(212,168,90,0.1)" : "transparent",
                   border: `1px solid ${m === x.id ? "#d4a85a" : "rgba(212,168,90,0.2)"}`,
-                  color: m === x.id ? "#fce8b0" : "rgba(252,232,176,0.6)",
+                  color: m === x.id ? "#fce8b0" : "rgba(252,232,176,0.85)",
                 }}
               >
                 {x.label}
@@ -82,7 +82,7 @@ export default function DeprCalc() {
           {ok ? (
             <>
               <div className="flex justify-between border-b py-2.5" style={{ borderColor: "rgba(212,168,90,0.08)" }}>
-                <span className="text-[12px] thai" style={{ color: "rgba(252,232,176,0.55)" }}>Method</span>
+                <span className="text-[12px] thai" style={{ color: "rgba(252,232,176,0.82)" }}>Method</span>
                 <span className="font-mono text-[14px]">{m}</span>
               </div>
               {m === "DB150" && (
@@ -105,7 +105,7 @@ export default function DeprCalc() {
               </div>
             </>
           ) : (
-            <p className="thai text-sm" style={{ color: "rgba(252,232,176,0.5)" }}>
+            <p className="thai text-sm" style={{ color: "rgba(252,232,176,0.78)" }}>
               กรอกค่าให้ครบและ B ≥ S_d
             </p>
           )}
@@ -114,7 +114,7 @@ export default function DeprCalc() {
 
       {ok && (
         <div className="mt-10">
-          <div className="text-[10px] tracking-[0.3em] uppercase mb-3" style={{ color: "rgba(212,168,90,0.55)" }}>
+          <div className="text-[10px] tracking-[0.3em] uppercase mb-3" style={{ color: "rgba(212,168,90,0.82)" }}>
             ▸ Year-by-year
           </div>
           <div
@@ -123,7 +123,7 @@ export default function DeprCalc() {
           >
             <table className="w-full font-mono text-[12px] tabular-nums">
               <thead>
-                <tr style={{ color: "rgba(212,168,90,0.7)" }}>
+                <tr style={{ color: "rgba(212,168,90,0.9)" }}>
                   <th className="text-left px-3 py-2 font-normal">j</th>
                   <th className="text-right px-3 py-2 font-normal">D_j</th>
                   <th className="text-right px-3 py-2 font-normal">B_j</th>
@@ -132,7 +132,7 @@ export default function DeprCalc() {
               <tbody>
                 {rows.map((r) => (
                   <tr key={r.j} style={{ color: "rgba(252,232,176,0.85)" }}>
-                    <td className="px-3 py-1.5" style={{ color: "rgba(212,168,90,0.5)" }}>{r.j}</td>
+                    <td className="px-3 py-1.5" style={{ color: "rgba(212,168,90,0.78)" }}>{r.j}</td>
                     <td className="text-right px-3 py-1.5">{fmt(r.D)}</td>
                     <td className="text-right px-3 py-1.5">{fmt(r.B)}</td>
                   </tr>

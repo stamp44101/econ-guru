@@ -23,7 +23,7 @@ export default function IRRCheckCalc() {
   let verdict, vColor, vNote;
   if (cfs.length < 2) {
     verdict = "—";
-    vColor = "rgba(252,232,176,0.4)";
+    vColor = "rgba(252,232,176,0.65)";
     vNote = "ใส่ cash flow อย่างน้อย 2 ค่า";
   } else if (sig === 1) {
     verdict = "UNIQUE";
@@ -50,7 +50,7 @@ export default function IRRCheckCalc() {
           style={{ borderColor: "rgba(212,168,90,0.2)", color: "#fce8b0" }}
           placeholder="-1000, 500, 500, 500"
         />
-        <p className="text-xs mt-3 thai" style={{ color: "rgba(252,232,176,0.45)" }}>
+        <p className="text-xs mt-3 thai" style={{ color: "rgba(252,232,176,0.72)" }}>
           คั่นด้วย comma หรือ space. ติดลบสำหรับ outflow.
         </p>
       </Section>
@@ -71,7 +71,7 @@ export default function IRRCheckCalc() {
           <div className="text-2xl" style={{ fontFamily: "'Cormorant Garamond', serif", color: vColor }}>
             {verdict}
           </div>
-          <div className="thai text-sm mt-2" style={{ color: "rgba(252,232,176,0.7)" }}>
+          <div className="thai text-sm mt-2" style={{ color: "rgba(252,232,176,0.9)" }}>
             {vNote}
           </div>
         </div>

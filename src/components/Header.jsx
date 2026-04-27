@@ -6,7 +6,7 @@ export default function Header({ chapter, mode }) {
     <div className="border-b pb-6" style={{ borderColor: "rgba(212,168,90,0.15)" }}>
       <div
         className="text-[11px] tracking-[0.3em] uppercase mb-3"
-        style={{ color: "rgba(212,168,90,0.55)" }}
+        style={{ color: "rgba(212,168,90,0.82)" }}
       >
         {chapter ? (
           <>
@@ -34,7 +34,7 @@ export default function Header({ chapter, mode }) {
       {chapter && (
         <p
           className="mt-2 text-lg thai"
-          style={{ color: "rgba(252,232,176,0.55)" }}
+          style={{ color: "rgba(252,232,176,0.82)" }}
         >
           {chapter.titleTh}
         </p>

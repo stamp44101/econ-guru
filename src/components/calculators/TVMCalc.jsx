@@ -55,7 +55,7 @@ export default function TVMCalc() {
             <Out label="(A/G, i, N)" value={fmt(factors.AG, 5)} />
           </div>
         ) : (
-          <p className="thai text-sm" style={{ color: "rgba(252,232,176,0.5)" }}>
+          <p className="thai text-sm" style={{ color: "rgba(252,232,176,0.78)" }}>
             กรอก i และ N ที่ถูกต้อง
           </p>
         )}

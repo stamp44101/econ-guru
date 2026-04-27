@@ -36,7 +36,7 @@ export default function QuizMode({ chapter }) {
 
   if (pool.length === 0) {
     return (
-      <p className="thai mt-6" style={{ color: "rgba(252,232,176,0.6)" }}>
+      <p className="thai mt-6" style={{ color: "rgba(252,232,176,0.85)" }}>
         บทนี้ยังไม่มีคำถามในธนาคารคำถาม
       </p>
     );
@@ -52,7 +52,7 @@ export default function QuizMode({ chapter }) {
 
     return (
       <div className="mt-10 max-w-md">
-        <div className="text-[10px] tracking-[0.3em] uppercase mb-3" style={{ color: "rgba(212,168,90,0.5)" }}>
+        <div className="text-[10px] tracking-[0.3em] uppercase mb-3" style={{ color: "rgba(212,168,90,0.78)" }}>
           ▸ ผลคะแนน
         </div>
         <div
@@ -64,10 +64,10 @@ export default function QuizMode({ chapter }) {
         <div className="text-xl mb-1" style={{ color: "#fce8b0" }}>
           {score} / {order.length}
         </div>
-        <div className="text-sm mb-6" style={{ color: "rgba(252,232,176,0.55)" }}>
+        <div className="text-sm mb-6" style={{ color: "rgba(252,232,176,0.82)" }}>
           {pctScore.toFixed(1)}%
         </div>
-        <p className="thai mb-8" style={{ color: "rgba(252,232,176,0.75)" }}>
+        <p className="thai mb-8" style={{ color: "rgba(252,232,176,0.92)" }}>
           {grade.t}
         </p>
         <button
@@ -109,7 +109,7 @@ export default function QuizMode({ chapter }) {
 
   return (
     <div className="mt-2">
-      <div className="flex items-center justify-between text-[10px] tracking-[0.3em] uppercase mb-3" style={{ color: "rgba(212,168,90,0.55)" }}>
+      <div className="flex items-center justify-between text-[10px] tracking-[0.3em] uppercase mb-3" style={{ color: "rgba(212,168,90,0.82)" }}>
         <span>
           ▸ Question {idx + 1} / {order.length}
         </span>
@@ -127,7 +127,7 @@ export default function QuizMode({ chapter }) {
 
       <div
         className="text-[11px] tracking-[0.2em] uppercase mb-4"
-        style={{ color: ch?.color || "rgba(212,168,90,0.6)" }}
+        style={{ color: ch?.color || "rgba(212,168,90,0.85)" }}
       >
         {ch?.num} · {ch?.title}
       </div>
@@ -154,7 +154,7 @@ export default function QuizMode({ chapter }) {
             } else if (i === picked && picked !== correct) {
               bg = "rgba(193,102,107,0.1)";
               bd = "#c1666b";
-              col = "rgba(252,232,176,0.7)";
+              col = "rgba(252,232,176,0.9)";
               icon = <X size={14} style={{ color: "#c1666b" }} />;
             }
           }
@@ -173,7 +173,7 @@ export default function QuizMode({ chapter }) {
             >
               <span
                 className="font-mono text-xs tabular-nums"
-                style={{ color: showFeedback && i === correct ? "#7fb069" : "rgba(212,168,90,0.55)" }}
+                style={{ color: showFeedback && i === correct ? "#7fb069" : "rgba(212,168,90,0.82)" }}
               >
                 {String.fromCharCode(65 + i)}
               </span>

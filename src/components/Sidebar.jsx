@@ -19,7 +19,7 @@ export default function Sidebar({ mode, setMode, chapterId, setChapterId }) {
       <div className="mb-10">
         <div
           className="text-[11px] tracking-[0.3em] uppercase mb-2"
-          style={{ color: "rgba(212,168,90,0.6)" }}
+          style={{ color: "rgba(212,168,90,0.85)" }}
         >
           ▸ Econ · Guru
         </div>
@@ -36,7 +36,7 @@ export default function Sidebar({ mode, setMode, chapterId, setChapterId }) {
           <br />
           <span style={{ color: "#d4a85a" }}>วิศวกรรม</span>
         </h1>
-        <p className="mt-2 text-sm thai" style={{ color: "rgba(252,232,176,0.5)" }}>
+        <p className="mt-2 text-sm thai" style={{ color: "rgba(252,232,176,0.78)" }}>
           ติวสอบ · 8 บท · offline
         </p>
       </div>
@@ -44,7 +44,7 @@ export default function Sidebar({ mode, setMode, chapterId, setChapterId }) {
       <div className="mb-10">
         <div
           className="text-[10px] tracking-[0.3em] uppercase mb-3"
-          style={{ color: "rgba(252,232,176,0.4)" }}
+          style={{ color: "rgba(252,232,176,0.65)" }}
         >
           MODE
         </div>
@@ -59,7 +59,7 @@ export default function Sidebar({ mode, setMode, chapterId, setChapterId }) {
                 style={{
                   background: active ? "rgba(212,168,90,0.1)" : "transparent",
                   borderLeft: `2px solid ${active ? "#d4a85a" : "transparent"}`,
-                  color: active ? "#fce8b0" : "rgba(252,232,176,0.55)",
+                  color: active ? "#fce8b0" : "rgba(252,232,176,0.82)",
                 }}
               >
                 <Icon size={16} />
@@ -75,14 +75,14 @@ export default function Sidebar({ mode, setMode, chapterId, setChapterId }) {
       <div>
         <div
           className="text-[10px] tracking-[0.3em] uppercase mb-3 flex items-center justify-between"
-          style={{ color: "rgba(252,232,176,0.4)" }}
+          style={{ color: "rgba(252,232,176,0.65)" }}
         >
           <span>CHAPTERS</span>
           {chapterId && (
             <button
               onClick={() => setChapterId(null)}
               className="text-[9px] underline"
-              style={{ color: "rgba(212,168,90,0.6)" }}
+              style={{ color: "rgba(212,168,90,0.85)" }}
             >
               clear
             </button>
@@ -104,7 +104,7 @@ export default function Sidebar({ mode, setMode, chapterId, setChapterId }) {
               >
                 <span
                   className="font-mono text-xs tabular-nums mt-1"
-                  style={{ color: active ? c.color : "rgba(252,232,176,0.35)" }}
+                  style={{ color: active ? c.color : "rgba(252,232,176,0.6)" }}
                 >
                   {c.num}
                 </span>
@@ -112,7 +112,7 @@ export default function Sidebar({ mode, setMode, chapterId, setChapterId }) {
                   <div
                     className="text-[15px] leading-tight"
                     style={{
-                      color: active ? "#fce8b0" : "rgba(252,232,176,0.7)",
+                      color: active ? "#fce8b0" : "rgba(252,232,176,0.9)",
                       fontFamily: "'Cormorant Garamond', serif",
                     }}
                   >
@@ -120,12 +120,12 @@ export default function Sidebar({ mode, setMode, chapterId, setChapterId }) {
                   </div>
                   <div
                     className="text-xs mt-0.5 thai truncate"
-                    style={{ color: active ? "rgba(252,232,176,0.55)" : "rgba(252,232,176,0.35)" }}
+                    style={{ color: active ? "rgba(252,232,176,0.82)" : "rgba(252,232,176,0.6)" }}
                   >
                     {c.titleTh}
                   </div>
                 </div>
-                <Icon size={14} style={{ color: active ? c.color : "rgba(252,232,176,0.25)" }} />
+                <Icon size={14} style={{ color: active ? c.color : "rgba(252,232,176,0.5)" }} />
               </button>
             );
           })}

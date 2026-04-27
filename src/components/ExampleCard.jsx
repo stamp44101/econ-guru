@@ -28,7 +28,7 @@ export default function ExampleCard({ q, steps, color, idx }) {
       <button
         onClick={() => setOpen(!open)}
         className="mt-4 flex items-center gap-2 text-sm thai"
-        style={{ color: open ? color : "rgba(212,168,90,0.7)" }}
+        style={{ color: open ? color : "rgba(212,168,90,0.9)" }}
       >
         <ChevronRight
           size={12}
@@ -42,9 +42,9 @@ export default function ExampleCard({ q, steps, color, idx }) {
             <li
               key={i}
               className="flex gap-3 font-mono text-[13px] leading-relaxed"
-              style={{ color: "rgba(252,232,176,0.75)" }}
+              style={{ color: "rgba(252,232,176,0.92)" }}
             >
-              <span className="tabular-nums" style={{ color: "rgba(212,168,90,0.5)" }}>
+              <span className="tabular-nums" style={{ color: "rgba(212,168,90,0.78)" }}>
                 {String(i + 1).padStart(2, "0")}
               </span>
               <span className="flex-1 whitespace-pre-wrap">{s}</span>

@@ -39,7 +39,7 @@ export default function CRCalc() {
             <Out label="CR = P(A/P) − S(A/F)" value={fmt(cr)} accent="#7fb069" />
           </>
         ) : (
-          <p className="thai text-sm" style={{ color: "rgba(252,232,176,0.5)" }}>
+          <p className="thai text-sm" style={{ color: "rgba(252,232,176,0.78)" }}>
             กรอกค่าให้ครบ
           </p>
         )}

@@ -17,7 +17,7 @@ export default function ConceptCard({ title, body, color }) {
           className="transition shrink-0"
           style={{
             transform: open ? "rotate(90deg)" : "rotate(0deg)",
-            color: open ? color : "rgba(252,232,176,0.5)",
+            color: open ? color : "rgba(252,232,176,0.78)",
           }}
         />
         <span
@@ -33,7 +33,7 @@ export default function ConceptCard({ title, body, color }) {
       {open && (
         <div
           className="mt-3 ml-7 pr-4 thai whitespace-pre-wrap text-[15px] leading-relaxed"
-          style={{ color: "rgba(252,232,176,0.75)" }}
+          style={{ color: "rgba(252,232,176,0.92)" }}
         >
           {body}
         </div>

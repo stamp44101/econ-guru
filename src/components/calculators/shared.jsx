@@ -1,7 +1,7 @@
 export function Field({ label, value, onChange, suffix, step = "any", placeholder }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[11px] tracking-[0.2em] uppercase" style={{ color: "rgba(212,168,90,0.6)" }}>
+      <span className="text-[11px] tracking-[0.2em] uppercase" style={{ color: "rgba(212,168,90,0.85)" }}>
         {label}
       </span>
       <div className="flex items-center border-b" style={{ borderColor: "rgba(212,168,90,0.2)" }}>
@@ -15,7 +15,7 @@ export function Field({ label, value, onChange, suffix, step = "any", placeholde
           style={{ color: "#fce8b0" }}
         />
         {suffix && (
-          <span className="font-mono text-xs ml-2" style={{ color: "rgba(212,168,90,0.5)" }}>
+          <span className="font-mono text-xs ml-2" style={{ color: "rgba(212,168,90,0.78)" }}>
             {suffix}
           </span>
         )}
@@ -27,7 +27,7 @@ export function Field({ label, value, onChange, suffix, step = "any", placeholde
 export function Out({ label, value, mono = true, accent }) {
   return (
     <div className="flex justify-between items-baseline border-b py-2.5" style={{ borderColor: "rgba(212,168,90,0.08)" }}>
-      <span className="text-[12px] thai" style={{ color: "rgba(252,232,176,0.55)" }}>
+      <span className="text-[12px] thai" style={{ color: "rgba(252,232,176,0.82)" }}>
         {label}
       </span>
       <span
@@ -45,7 +45,7 @@ export function Section({ title, color, children }) {
     <div>
       <div
         className="text-[10px] tracking-[0.3em] uppercase mb-3"
-        style={{ color: color || "rgba(212,168,90,0.55)" }}
+        style={{ color: color || "rgba(212,168,90,0.82)" }}
       >
         ▸ {title}
       </div>
