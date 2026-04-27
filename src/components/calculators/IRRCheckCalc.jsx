@@ -23,19 +23,19 @@ export default function IRRCheckCalc() {
   let verdict, vColor, vNote;
   if (cfs.length < 2) {
     verdict = "—";
-    vColor = "rgba(252,232,176,0.65)";
+    vColor = "rgba(245,240,255,0.65)";
     vNote = "ใส่ cash flow อย่างน้อย 2 ค่า";
   } else if (sig === 1) {
     verdict = "UNIQUE";
-    vColor = "#7fb069";
+    vColor = "#86efac";
     vNote = "Descartes พิสูจน์ — sign changes = 1.";
   } else if (cumSig === 1) {
     verdict = "UNIQUE";
-    vColor = "#7fb069";
+    vColor = "#86efac";
     vNote = "Norstrom พิสูจน์ — cumulative sign changes = 1.";
   } else {
     verdict = "อาจไม่ unique";
-    vColor = "#e07a5f";
+    vColor = "#fb7185";
     vNote = "ลอง Project Balance test หรือใช้ ERR แทน.";
   }
 
@@ -47,10 +47,10 @@ export default function IRRCheckCalc() {
           value={text}
           onChange={(e) => setText(e.target.value)}
           className="w-full bg-transparent border outline-none p-3 font-mono text-[14px] resize-y"
-          style={{ borderColor: "rgba(212,168,90,0.2)", color: "#fce8b0" }}
+          style={{ borderColor: "rgba(167,139,250,0.2)", color: "#f5f0ff" }}
           placeholder="-1000, 500, 500, 500"
         />
-        <p className="text-xs mt-3 thai" style={{ color: "rgba(252,232,176,0.72)" }}>
+        <p className="text-xs mt-3 thai" style={{ color: "rgba(245,240,255,0.72)" }}>
           คั่นด้วย comma หรือ space. ติดลบสำหรับ outflow.
         </p>
       </Section>
@@ -59,11 +59,11 @@ export default function IRRCheckCalc() {
         <Out label="N" value={cfs.length} mono={false} />
         <Out label="Descartes sign changes" value={sig} />
         <Out label="Norstrom cumulative sign changes" value={cumSig} />
-        <Out label="IRR (bisection)" value={irr === null ? "—" : pct(irr, 4)} accent="#e07a5f" />
+        <Out label="IRR (bisection)" value={irr === null ? "—" : pct(irr, 4)} accent="#fb7185" />
 
         <div
           className="mt-6 p-4 border-l-2"
-          style={{ borderColor: vColor, background: "rgba(15,12,10,0.5)" }}
+          style={{ borderColor: vColor, background: "rgba(10,6,18,0.5)" }}
         >
           <div className="text-[10px] tracking-[0.3em] uppercase mb-1" style={{ color: vColor }}>
             ▸ verdict
@@ -71,7 +71,7 @@ export default function IRRCheckCalc() {
           <div className="text-2xl" style={{ fontFamily: "'Cormorant Garamond', serif", color: vColor }}>
             {verdict}
           </div>
-          <div className="thai text-sm mt-2" style={{ color: "rgba(252,232,176,0.9)" }}>
+          <div className="thai text-sm mt-2" style={{ color: "rgba(245,240,255,0.9)" }}>
             {vNote}
           </div>
         </div>

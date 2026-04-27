@@ -9,15 +9,15 @@ import QuizMode from "./components/QuizMode";
 const styles = {
   root: {
     background:
-      "radial-gradient(ellipse at top left, #2a1f17 0%, #1a1410 40%, #0f0c0a 100%)",
-    color: "#fce8b0",
+      "radial-gradient(ellipse at top left, #221638 0%, #15101e 40%, #0a0612 100%)",
+    color: "#f5f0ff",
     fontFamily: "'Cormorant Garamond', 'Sarabun', ui-serif, Georgia, serif",
     minHeight: "100vh",
   },
   paper: {
     backgroundImage: `
-      radial-gradient(circle at 20% 30%, rgba(212,168,90,0.04) 0%, transparent 50%),
-      radial-gradient(circle at 80% 70%, rgba(127,176,105,0.03) 0%, transparent 50%)
+      radial-gradient(circle at 20% 30%, rgba(167,139,250,0.04) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(134,239,172,0.03) 0%, transparent 50%)
     `,
   },
 };
@@ -32,7 +32,7 @@ export default function App() {
     <div style={styles.root}>
       <div style={styles.paper} className="min-h-screen">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-0">
-          <aside className="lg:col-span-3 lg:min-h-screen border-b lg:border-b-0 lg:border-r border-amber/10" style={{ borderColor: "rgba(212,168,90,0.1)" }}>
+          <aside className="lg:col-span-3 lg:min-h-screen border-b lg:border-b-0 lg:border-r border-amber/10" style={{ borderColor: "rgba(167,139,250,0.1)" }}>
             <Sidebar
               mode={mode}
               setMode={setMode}

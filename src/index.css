@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root { background: #0f0c0a; color: #fce8b0; min-height: 100vh; }
+html, body, #root { background: #0a0612; color: #f5f0ff; min-height: 100vh; }
 body {
   margin: 0;
   font-family: 'Cormorant Garamond', 'Sarabun', ui-serif, Georgia, serif;
@@ -14,8 +14,8 @@ body {
 
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: rgba(255,255,255,0.02); }
-::-webkit-scrollbar-thumb { background: rgba(212,168,90,0.2); border-radius: 5px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(212,168,90,0.65); }
+::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.2); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(167,139,250,0.65); }
 
 input[type="number"] { -moz-appearance: textfield; }
 input[type="number"]::-webkit-inner-spin-button,

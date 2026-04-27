@@ -36,10 +36,10 @@ export default function CRCalc() {
             <Out label="(A/F, i, N)" value={fmt(af, 5)} />
             <Out label="P · (A/P)" value={fmt(p * ap)} />
             <Out label="S · (A/F)" value={fmt(s * af)} />
-            <Out label="CR = P(A/P) − S(A/F)" value={fmt(cr)} accent="#7fb069" />
+            <Out label="CR = P(A/P) − S(A/F)" value={fmt(cr)} accent="#86efac" />
           </>
         ) : (
-          <p className="thai text-sm" style={{ color: "rgba(252,232,176,0.78)" }}>
+          <p className="thai text-sm" style={{ color: "rgba(245,240,255,0.78)" }}>
             กรอกค่าให้ครบ
           </p>
         )}

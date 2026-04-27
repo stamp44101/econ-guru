@@ -3,10 +3,10 @@ export default function Header({ chapter, mode }) {
     mode === "review" ? "Review" : mode === "calc" ? "Calculator" : "Quiz";
 
   return (
-    <div className="border-b pb-6" style={{ borderColor: "rgba(212,168,90,0.15)" }}>
+    <div className="border-b pb-6" style={{ borderColor: "rgba(167,139,250,0.15)" }}>
       <div
         className="text-[11px] tracking-[0.3em] uppercase mb-3"
-        style={{ color: "rgba(212,168,90,0.82)" }}
+        style={{ color: "rgba(167,139,250,0.82)" }}
       >
         {chapter ? (
           <>
@@ -26,7 +26,7 @@ export default function Header({ chapter, mode }) {
           fontFamily: "'Cormorant Garamond', serif",
           fontWeight: 500,
           letterSpacing: "-0.02em",
-          color: "#fce8b0",
+          color: "#f5f0ff",
         }}
       >
         {chapter ? chapter.title : "Econ Guru"}
@@ -34,7 +34,7 @@ export default function Header({ chapter, mode }) {
       {chapter && (
         <p
           className="mt-2 text-lg thai"
-          style={{ color: "rgba(252,232,176,0.82)" }}
+          style={{ color: "rgba(245,240,255,0.82)" }}
         >
           {chapter.titleTh}
         </p>

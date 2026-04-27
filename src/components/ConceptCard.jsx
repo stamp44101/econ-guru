@@ -6,7 +6,7 @@ export default function ConceptCard({ title, body, color }) {
   return (
     <div
       className="border-l-2 pl-5 py-3 transition"
-      style={{ borderColor: open ? color : "rgba(212,168,90,0.2)" }}
+      style={{ borderColor: open ? color : "rgba(167,139,250,0.2)" }}
     >
       <button
         onClick={() => setOpen(!open)}
@@ -17,14 +17,14 @@ export default function ConceptCard({ title, body, color }) {
           className="transition shrink-0"
           style={{
             transform: open ? "rotate(90deg)" : "rotate(0deg)",
-            color: open ? color : "rgba(252,232,176,0.78)",
+            color: open ? color : "rgba(245,240,255,0.78)",
           }}
         />
         <span
           className="text-lg flex-1"
           style={{
             fontFamily: "'Cormorant Garamond', serif",
-            color: open ? "#fce8b0" : "rgba(252,232,176,0.85)",
+            color: open ? "#f5f0ff" : "rgba(245,240,255,0.85)",
           }}
         >
           {title}
@@ -33,7 +33,7 @@ export default function ConceptCard({ title, body, color }) {
       {open && (
         <div
           className="mt-3 ml-7 pr-4 thai whitespace-pre-wrap text-[15px] leading-relaxed"
-          style={{ color: "rgba(252,232,176,0.92)" }}
+          style={{ color: "rgba(245,240,255,0.92)" }}
         >
           {body}
         </div>

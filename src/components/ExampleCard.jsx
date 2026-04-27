@@ -7,8 +7,8 @@ export default function ExampleCard({ q, steps, color, idx }) {
     <div
       className="p-5 border rounded-sm"
       style={{
-        borderColor: "rgba(212,168,90,0.15)",
-        background: "rgba(15,12,10,0.5)",
+        borderColor: "rgba(167,139,250,0.15)",
+        background: "rgba(10,6,18,0.5)",
       }}
     >
       <div className="flex items-start gap-3">
@@ -20,7 +20,7 @@ export default function ExampleCard({ q, steps, color, idx }) {
         </span>
         <p
           className="flex-1 thai whitespace-pre-wrap text-[15px] leading-relaxed"
-          style={{ color: "rgba(252,232,176,0.85)" }}
+          style={{ color: "rgba(245,240,255,0.85)" }}
         >
           {q}
         </p>
@@ -28,7 +28,7 @@ export default function ExampleCard({ q, steps, color, idx }) {
       <button
         onClick={() => setOpen(!open)}
         className="mt-4 flex items-center gap-2 text-sm thai"
-        style={{ color: open ? color : "rgba(212,168,90,0.9)" }}
+        style={{ color: open ? color : "rgba(167,139,250,0.9)" }}
       >
         <ChevronRight
           size={12}
@@ -42,9 +42,9 @@ export default function ExampleCard({ q, steps, color, idx }) {
             <li
               key={i}
               className="flex gap-3 font-mono text-[13px] leading-relaxed"
-              style={{ color: "rgba(252,232,176,0.92)" }}
+              style={{ color: "rgba(245,240,255,0.92)" }}
             >
-              <span className="tabular-nums" style={{ color: "rgba(212,168,90,0.78)" }}>
+              <span className="tabular-nums" style={{ color: "rgba(167,139,250,0.78)" }}>
                 {String(i + 1).padStart(2, "0")}
               </span>
               <span className="flex-1 whitespace-pre-wrap">{s}</span>

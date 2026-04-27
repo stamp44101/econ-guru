@@ -55,7 +55,7 @@ export default function TVMCalc() {
             <Out label="(A/G, i, N)" value={fmt(factors.AG, 5)} />
           </div>
         ) : (
-          <p className="thai text-sm" style={{ color: "rgba(252,232,176,0.78)" }}>
+          <p className="thai text-sm" style={{ color: "rgba(245,240,255,0.78)" }}>
             กรอก i และ N ที่ถูกต้อง
           </p>
         )}
@@ -63,15 +63,15 @@ export default function TVMCalc() {
 
       {factors && (
         <Section title="From P">
-          <Out label="F = P · (F/P)" value={fmt(p * factors.FP)} accent="#d4a85a" />
-          <Out label="A = P · (A/P)" value={fmt(p * factors.AP)} accent="#d4a85a" />
+          <Out label="F = P · (F/P)" value={fmt(p * factors.FP)} accent="#a78bfa" />
+          <Out label="A = P · (A/P)" value={fmt(p * factors.AP)} accent="#a78bfa" />
         </Section>
       )}
 
       {factors && (
         <Section title="From A">
-          <Out label="P = A · (P/A)" value={fmt(a * factors.PA)} accent="#d4a85a" />
-          <Out label="F = A · (F/A)" value={fmt(a * factors.FA)} accent="#d4a85a" />
+          <Out label="P = A · (P/A)" value={fmt(a * factors.PA)} accent="#a78bfa" />
+          <Out label="F = A · (F/A)" value={fmt(a * factors.FA)} accent="#a78bfa" />
         </Section>
       )}
 
@@ -82,7 +82,7 @@ export default function TVMCalc() {
           <Out
             label="P_total = A·(P/A) + G·(P/G)"
             value={fmt(a * factors.PA + g * factors.PG)}
-            accent="#d4a85a"
+            accent="#a78bfa"
           />
         </Section>
       )}

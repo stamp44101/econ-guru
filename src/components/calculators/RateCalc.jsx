@@ -34,9 +34,9 @@ export default function RateCalc() {
               onClick={() => setDir(id)}
               className="px-3 py-2 transition rounded"
               style={{
-                background: dir === id ? "rgba(212,168,90,0.1)" : "transparent",
-                border: `1px solid ${dir === id ? "#d4a85a" : "rgba(212,168,90,0.2)"}`,
-                color: dir === id ? "#fce8b0" : "rgba(252,232,176,0.85)",
+                background: dir === id ? "rgba(167,139,250,0.1)" : "transparent",
+                border: `1px solid ${dir === id ? "#a78bfa" : "rgba(167,139,250,0.2)"}`,
+                color: dir === id ? "#f5f0ff" : "rgba(245,240,255,0.85)",
               }}
             >
               {label}
@@ -55,9 +55,9 @@ export default function RateCalc() {
 
       <Section title="Results">
         <Out label="i_m (rate per sub-period)" value={fmt(im * 100, 6) + " %"} />
-        <Out label="r (nominal annual)" value={fmt(R * 100, 6) + " %"} accent={dir === "eff2nom" ? "#d4a85a" : undefined} />
-        <Out label="i (effective annual)" value={fmt(i * 100, 6) + " %"} accent={dir === "nom2eff" ? "#d4a85a" : undefined} />
-        <p className="thai text-xs mt-4" style={{ color: "rgba(252,232,176,0.72)" }}>
+        <Out label="r (nominal annual)" value={fmt(R * 100, 6) + " %"} accent={dir === "eff2nom" ? "#a78bfa" : undefined} />
+        <Out label="i (effective annual)" value={fmt(i * 100, 6) + " %"} accent={dir === "nom2eff" ? "#a78bfa" : undefined} />
+        <p className="thai text-xs mt-4" style={{ color: "rgba(245,240,255,0.72)" }}>
           กฎ: i ≥ r เสมอ; เท่ากันเมื่อ M = 1.
         </p>
       </Section>

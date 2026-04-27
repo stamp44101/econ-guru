@@ -34,7 +34,7 @@ export default function CalcMode({ chapter }) {
 
   if (visible.length === 0) {
     return (
-      <p className="thai mt-6" style={{ color: "rgba(252,232,176,0.85)" }}>
+      <p className="thai mt-6" style={{ color: "rgba(245,240,255,0.85)" }}>
         บทนี้ไม่มีเครื่องคิดที่เกี่ยวข้อง — ลองล้างการเลือกบทดูได้
       </p>
     );
@@ -53,9 +53,9 @@ export default function CalcMode({ chapter }) {
               onClick={() => setActiveId(c.id)}
               className="px-3 py-2 text-[11px] tracking-[0.2em] uppercase whitespace-nowrap transition rounded"
               style={{
-                background: on ? "rgba(212,168,90,0.1)" : "transparent",
-                border: `1px solid ${on ? "#d4a85a" : "rgba(212,168,90,0.15)"}`,
-                color: on ? "#fce8b0" : "rgba(252,232,176,0.82)",
+                background: on ? "rgba(167,139,250,0.1)" : "transparent",
+                border: `1px solid ${on ? "#a78bfa" : "rgba(167,139,250,0.15)"}`,
+                color: on ? "#f5f0ff" : "rgba(245,240,255,0.82)",
               }}
             >
               {c.label}

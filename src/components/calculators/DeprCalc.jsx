@@ -67,9 +67,9 @@ export default function DeprCalc() {
                 onClick={() => setM(x.id)}
                 className="px-3 py-2 text-[11px] tracking-[0.2em] uppercase transition rounded"
                 style={{
-                  background: m === x.id ? "rgba(212,168,90,0.1)" : "transparent",
-                  border: `1px solid ${m === x.id ? "#d4a85a" : "rgba(212,168,90,0.2)"}`,
-                  color: m === x.id ? "#fce8b0" : "rgba(252,232,176,0.85)",
+                  background: m === x.id ? "rgba(167,139,250,0.1)" : "transparent",
+                  border: `1px solid ${m === x.id ? "#a78bfa" : "rgba(167,139,250,0.2)"}`,
+                  color: m === x.id ? "#f5f0ff" : "rgba(245,240,255,0.85)",
                 }}
               >
                 {x.label}
@@ -81,31 +81,31 @@ export default function DeprCalc() {
         <Section title="Summary">
           {ok ? (
             <>
-              <div className="flex justify-between border-b py-2.5" style={{ borderColor: "rgba(212,168,90,0.08)" }}>
-                <span className="text-[12px] thai" style={{ color: "rgba(252,232,176,0.82)" }}>Method</span>
+              <div className="flex justify-between border-b py-2.5" style={{ borderColor: "rgba(167,139,250,0.08)" }}>
+                <span className="text-[12px] thai" style={{ color: "rgba(245,240,255,0.82)" }}>Method</span>
                 <span className="font-mono text-[14px]">{m}</span>
               </div>
               {m === "DB150" && (
-                <div className="flex justify-between border-b py-2.5" style={{ borderColor: "rgba(212,168,90,0.08)" }}>
+                <div className="flex justify-between border-b py-2.5" style={{ borderColor: "rgba(167,139,250,0.08)" }}>
                   <span className="text-[12px]">α = 1.5 / N_d</span>
                   <span className="font-mono text-[14px] tabular-nums">{fmt(1.5 / Nv, 4)}</span>
                 </div>
               )}
               {m === "DDB" && (
-                <div className="flex justify-between border-b py-2.5" style={{ borderColor: "rgba(212,168,90,0.08)" }}>
+                <div className="flex justify-between border-b py-2.5" style={{ borderColor: "rgba(167,139,250,0.08)" }}>
                   <span className="text-[12px]">α = 2 / N_d</span>
                   <span className="font-mono text-[14px] tabular-nums">{fmt(2 / Nv, 4)}</span>
                 </div>
               )}
-              <div className="flex justify-between border-b py-2.5" style={{ borderColor: "rgba(212,168,90,0.08)" }}>
+              <div className="flex justify-between border-b py-2.5" style={{ borderColor: "rgba(167,139,250,0.08)" }}>
                 <span className="text-[12px]">Total depreciation</span>
-                <span className="font-mono text-[14px] tabular-nums" style={{ color: "#d4a85a" }}>
+                <span className="font-mono text-[14px] tabular-nums" style={{ color: "#a78bfa" }}>
                   {fmt(total)}
                 </span>
               </div>
             </>
           ) : (
-            <p className="thai text-sm" style={{ color: "rgba(252,232,176,0.78)" }}>
+            <p className="thai text-sm" style={{ color: "rgba(245,240,255,0.78)" }}>
               กรอกค่าให้ครบและ B ≥ S_d
             </p>
           )}
@@ -114,16 +114,16 @@ export default function DeprCalc() {
 
       {ok && (
         <div className="mt-10">
-          <div className="text-[10px] tracking-[0.3em] uppercase mb-3" style={{ color: "rgba(212,168,90,0.82)" }}>
+          <div className="text-[10px] tracking-[0.3em] uppercase mb-3" style={{ color: "rgba(167,139,250,0.82)" }}>
             ▸ Year-by-year
           </div>
           <div
             className="overflow-x-auto border-l-2"
-            style={{ borderColor: "#9d8189", background: "rgba(15,12,10,0.5)" }}
+            style={{ borderColor: "#9d8189", background: "rgba(10,6,18,0.5)" }}
           >
             <table className="w-full font-mono text-[12px] tabular-nums">
               <thead>
-                <tr style={{ color: "rgba(212,168,90,0.9)" }}>
+                <tr style={{ color: "rgba(167,139,250,0.9)" }}>
                   <th className="text-left px-3 py-2 font-normal">j</th>
                   <th className="text-right px-3 py-2 font-normal">D_j</th>
                   <th className="text-right px-3 py-2 font-normal">B_j</th>
@@ -131,8 +131,8 @@ export default function DeprCalc() {
               </thead>
               <tbody>
                 {rows.map((r) => (
-                  <tr key={r.j} style={{ color: "rgba(252,232,176,0.85)" }}>
-                    <td className="px-3 py-1.5" style={{ color: "rgba(212,168,90,0.78)" }}>{r.j}</td>
+                  <tr key={r.j} style={{ color: "rgba(245,240,255,0.85)" }}>
+                    <td className="px-3 py-1.5" style={{ color: "rgba(167,139,250,0.78)" }}>{r.j}</td>
                     <td className="text-right px-3 py-1.5">{fmt(r.D)}</td>
                     <td className="text-right px-3 py-1.5">{fmt(r.B)}</td>
                   </tr>

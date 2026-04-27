@@ -16,7 +16,7 @@ export const CHAPTERS = [
     title: "Time Value of Money",
     titleTh: "มูลค่าเงินตามเวลา",
     icon: Clock,
-    color: "#d4a85a",
+    color: "#fb923c",
     overview:
       'เงิน 100 บาทวันนี้มีค่ามากกว่า 100 บาทปีหน้า เพราะเอาไปลงทุนได้ดอก. บทนี้คือกล่องเครื่องมือสำหรับ "แปลงเวลา" ของกระแสเงินสด — single payment, uniform series, arithmetic & geometric gradient — ทุกปัญหาในบทถัด ๆ ไปต่อยอดจากตรงนี้.',
     concepts: [
@@ -93,7 +93,7 @@ export const CHAPTERS = [
     title: "Comparison Methods I",
     titleTh: "วิธีเปรียบเทียบทางเลือก ภาค 1",
     icon: TrendingUp,
-    color: "#7fb069",
+    color: "#a78bfa",
     overview:
       'ก่อนเลือกทางเลือกใด ๆ ต้องแปลงทุก cash flow มาอยู่บน basis เดียวกันที่เวลาเดียวกัน — PW (NPV), AW, หรือ FW ทำได้ทั้งสามวิธีแล้วได้คำตอบเหมือนกัน. ความท้าทายอยู่ที่ "ทางเลือกอายุไม่เท่ากัน".',
     concepts: [
@@ -155,7 +155,7 @@ export const CHAPTERS = [
     title: "Comparison Methods II",
     titleTh: "วิธีเปรียบเทียบทางเลือก ภาค 2",
     icon: Zap,
-    color: "#e07a5f",
+    color: "#f97316",
     overview:
       'IRR คืออัตราที่ทำให้ PW = 0. กับดักคือ "IRR อาจไม่ unique" และ "การเปรียบเทียบ multi-projects ต้องทำ incremental". เข้าใจ 3 uniqueness tests ได้ คะแนนคุณปลอดภัย.',
     concepts: [
@@ -221,7 +221,7 @@ export const CHAPTERS = [
     title: "Depreciation",
     titleTh: "ค่าเสื่อมราคา",
     icon: FileText,
-    color: "#9d8189",
+    color: "#c4b5fd",
     overview:
       'ค่าเสื่อมราคา = วิธีกระจายต้นทุน asset เป็นค่าใช้จ่ายทางบัญชีในแต่ละปี. "ลดได้เร็ว" = "ลดภาษีต้นปีได้มาก" = "PW after-tax สูงกว่า".',
     concepts: [
@@ -279,7 +279,7 @@ export const CHAPTERS = [
     title: "Taxes",
     titleTh: "ภาษี",
     icon: Receipt,
-    color: "#5b8e7d",
+    color: "#fdba74",
     overview:
       'After-tax analysis = แปลงทุกอย่างเป็น CFAT แล้วใช้ CFAT แทน CFBT ใน NPV/IRR. กับดักหลัก: depreciation ลด taxable income แต่ "ไม่ใช่" cash flow — ต้องบวกกลับ.',
     concepts: [
@@ -340,7 +340,7 @@ export const CHAPTERS = [
     title: "Retirement & Replacement",
     titleTh: "การเลิกใช้และทดแทนเครื่องจักร",
     icon: Repeat,
-    color: "#c1666b",
+    color: "#8b5cf6",
     overview:
       'Defender (เครื่องเก่า) vs Challenger (เครื่องใหม่) — ตัดสินใจปีต่อปี. หัวใจคือ Economic life N* = ปีที่ Annual Cost ต่ำสุด ของ challenger.',
     concepts: [
@@ -391,7 +391,7 @@ export const CHAPTERS = [
     title: "Inflation",
     titleTh: "เงินเฟ้อ",
     icon: Wind,
-    color: "#7d8cc4",
+    color: "#ddd6fe",
     overview:
       'เงินเฟ้อ f = ราคาเพิ่มเฉลี่ยต่อปี. กฎทอง: ใช้ rate ที่ match กับ dollar units — actual$ → market rate, constant$ → real rate.',
     concepts: [
@@ -448,7 +448,7 @@ export const CHAPTERS = [
     title: "Cost Estimation",
     titleTh: "การประเมินต้นทุน",
     icon: Wrench,
-    color: "#b4846c",
+    color: "#fbbf24",
     overview:
       'ก่อนสร้างโรงงานต้องประเมิน "ต้นทุนรวม". มีหลายระดับความแม่น ตั้งแต่ ±5% (detailed) ถึง ±50% (turnover ratio).',
     concepts: [
